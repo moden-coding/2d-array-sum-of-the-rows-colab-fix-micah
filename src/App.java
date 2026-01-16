@@ -11,9 +11,14 @@ public class App {
 			System.out.println(sum);
 		//this should print 4 6 11 3
 	}
-	public static int[] rowSums(int[][] nums)
-	{
-		return null; //placeholder
+	public static int[] rowSums(int[][] nums){
+		int[] sums = new int[nums.length];
+		for(int i = 0; i < nums.length; i++){
+			for(int j = 0; j < nums[i].length; j++){
+				sums[i] += nums[i][j];
+			}
+		}
+		return sums;
 	}
 	
 }
